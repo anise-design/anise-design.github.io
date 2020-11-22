@@ -406,6 +406,9 @@ as map links were affected by page sizing*/
     width: 75%;
     margin-left: 20%;   
 }
+.erica a {
+    color: darkred;
+}
 .flex-erica{
     display: flex;
     flex-direction: row;
@@ -447,6 +450,9 @@ as map links were affected by page sizing*/
   .pbar-text p {
       text-align: left;
   }
+  .pbar-text a {
+    color: darkred;
+}
 
  /* Centralising the heading and associated video */
 .video h3{
@@ -472,10 +478,15 @@ as map links were affected by page sizing*/
     .flex-pbar {
         flex-direction: column;       
     }
-  }
+}
+.pbarx a {
+    color: darkred;
+}
+.credit-links a {
+    color: darkred;
+}
 
-
-
+/* CREDITS page */
 
 /*-- ************************************************* 
 /*-- ********* DO NOT DELETE the code above **********   
