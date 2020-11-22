@@ -381,6 +381,12 @@ form {
 
 /******* End of Newsletter Subscription *********/
 
+/* CONTACT Email */
+.contactus a {
+    text-decoration: underline;
+    color: darkred;
+}
+
 /***** HTML MAP & EDITIONS LIST *****/
 /* CSS moved to separate file map.css,
 as map links were affected by page sizing*/
@@ -482,11 +488,11 @@ as map links were affected by page sizing*/
 .pbarx a {
     color: darkred;
 }
+
+/* CREDITS page */
 .credit-links a {
     color: darkred;
 }
-
-/* CREDITS page */
 
 /*-- ************************************************* 
 /*-- ********* DO NOT DELETE the code above **********   
