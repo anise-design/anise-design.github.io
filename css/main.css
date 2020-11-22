@@ -432,9 +432,18 @@ as map links were affected by page sizing*/
     justify-content: space-around;
     text-align: center;
   }
+
   .pbar img {
-      padding-right: 50px;
+    padding-right: 50px;
+    transition: 1s ease;
   }
+  .pbar img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
   .pbar-text p {
       text-align: left;
   }
