@@ -206,19 +206,34 @@ html {
 .profiles img {
     margin-right: 20px;
     float: left;
+    transition: 1s ease;
 }
 .profiles1 img {
     margin-left: 20px;
     float: right;
+    transition: 1s ease;
 }
+.profiles img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+    }
+.profiles1 img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+    }
 .profiles p {
     width: 75%;
     margin-left: 20%; 
-    text-align: right;   
+    text-align: justify;   
 }
 .profiles1 p {
     width: 75%;
-    margin-right: 20%;    
+    margin-right: 20%;
+    text-align: justify;    
 }
 @media (max-width: 800px) {
     .profiles img{
@@ -505,6 +520,35 @@ as map links were affected by page sizing*/
 /*************** V Individual pages below this line V *************************/
 
 /* CSS for ANA */
+.h1-AE {
+    text-align: center;
+    color:white;
+    background-color: black;
+    font-family: fantasy;
+    font-size: 300%;
+    font-variant: small-caps;
+    padding: 20px;
+}
+.body-AE { 
+    padding: 0px ;
+    border:black ;
+    background-origin:padding-box ;
+    margin:0px ;
+    
+}
+.section-AE {
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color:  #F1F1F1;
+}
+.picture-AE {
+    display: inline-block;  
+   }
+
+
+
+
 
 
 /* CSS for KEMER */
