@@ -8,11 +8,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Checking user actions for SEARCH box
   var clickSearch = document.getElementById('searching'); //button
-  var searchText = document.getElementById('search');  //text entered
+  var f = document.getElementById('gform');  //form
+  var q = document.getElementById('search');  //text entered
+//const q = document.getElementById('query');  
+
+  const google = 'https://www.google.com/search?q=site%3A+';
+  const site = 'anise-design.github.io';
+
+  function submitted(event) {
+    event.preventDefault();
+    const url = google + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+
+  f.addEventListener('submit', submitted);
   
+  /*
   clickSearch.addEventListener('click', function(ev) {
     // When button is clicked...
-    if (searchText && searchText.value) {
+    if (q && q.value) {
       // and text has been entered
       alert("Search in progress."); 
     } else {
@@ -20,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
       alert("No search entered");
     }    
   }); 
+  */
 
 
   // Alert box to indicate when email is entered
