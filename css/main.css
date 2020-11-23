@@ -213,7 +213,8 @@ html {
 }
 .profiles p {
     width: 75%;
-    margin-left: 20%;    
+    margin-left: 20%; 
+    text-align: right;   
 }
 .profiles1 p {
     width: 75%;
