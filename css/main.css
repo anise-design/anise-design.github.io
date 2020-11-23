@@ -313,7 +313,8 @@ html {
 .search-container {
     display: inline-block;
 }
-.search-container input[type=text] {
+#search {
+    all: unset;
     width: auto;
     padding: 6px;
     border-top: none;
@@ -322,9 +323,11 @@ html {
     border-bottom: 2px solid black;
     box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
+    font-size: small;
+    letter-spacing: normal;
+    text-align: left;
     margin-top: 8px;
     margin-right: 16px;
-    
 }
 .search-container button {
     float: right;
