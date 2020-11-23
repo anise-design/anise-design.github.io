@@ -43,8 +43,11 @@
           <div class="sitemap"><!-- 1. Menu, Search -->
 
             <div class="search-container">
-              <form action="#"><!-- dummy php filename -->
-                <input type="text" placeholder="This site..." id="search">
+              <form id="gform" role="search"><!-- -->
+                <input type="search" 
+                placeholder="This site..." 
+                id="search" name="q"
+                aria-label="Search thro' site">
                 <button id="searching" type="submit">Search</button>
               </form>
             </div>  
