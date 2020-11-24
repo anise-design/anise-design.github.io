@@ -410,7 +410,7 @@ form {
 /* CSS moved to separate file map.css,
 as map links were affected by page sizing*/
 
-/***** CSS for janet1.html ******/
+/***** Art ******/
 .next-page{
     font-size: smaller;
     text-align: right;
@@ -452,7 +452,7 @@ as map links were affected by page sizing*/
     }
   }
 
-  /* CSS for janet2.html */
+  /* Architecture */
   .flex-pbar{
     display: flex;
     flex-direction: row;
@@ -513,13 +513,8 @@ as map links were affected by page sizing*/
     color: darkred;
 }
 
-/*-- ************************************************* 
-/*-- ********* DO NOT DELETE the code above **********   
-/*-- ************************************************* 
 
-/*************** V Individual pages below this line V *************************/
-
-/* CSS for ANA */
+/* Fashion */
 .h1-AE {
     text-align: center;
     color:white;
@@ -539,22 +534,23 @@ as map links were affected by page sizing*/
 .section-AE {
     text-align: center;
     padding: 10px 20px;
-    font-weight: bold;
+    
     background-color:  #F1F1F1;
 }
 .picture-AE {
-    display: inline-block;  
+    display: flex; 
+    direction: row; 
+    justify-content: space-around;
    }
+@media (max-width: 800px) {
+    .picture-AE {
+        flex-direction: column;       
+    }
+}
 
 
 
-
-
-
-/* CSS for KEMER */
-
-
-/* CSS for NIAMH */
+/* Countermonument */
 .img-fluid-NM{
     max-width: 100%;
     height: auto;
@@ -579,7 +575,6 @@ as map links were affected by page sizing*/
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 
 
