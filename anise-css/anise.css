@@ -1,0 +1,55 @@
+body {
+    display: flex;  /* setting "display: flex" allows its children (e.g. "main" below) to use the "flex" property */
+    flex-direction: column;
+    padding-top: 56px;  /* allow enough space for a fixed navbar (56px is the height of the navbar here) */
+    min-height: 100vh;  /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
+  }
+  
+main {
+    flex: 1;  /* makes the <main> grow (we want it to grow so that it pushes <footer> to the bottom of page)*/
+  }
+  
+.carousel-inner img {
+    width: 100%;  /* fit the image within the div */
+    /* FANCY ADVANCED CSS - calc():
+           calculates the height of the full page (100vh)
+           minus the height of the navbar (56px)
+           minus the height of anything else
+      allocates this height to the carousel images, so that the carousel, navbar, and second-navbar can all fit on the page (regardless of screen size)
+   */
+    height: calc(100vh - 56px - 0px);
+    object-fit: cover;  /* "object-fit" property has various options for fitting an image within a specified space (works because both the img width and height are specified) */
+  }
+  /*
+  .carouseltext {
+    color: white;
+    background: black;   
+  }
+  */
+
+  .card {
+    border: none;
+  }
+  /* Responsive layout - makes a 1 column layout instead of a multi column layout */
+  @media (max-width: 800px) {
+    .d-flex {
+      flex-direction: column;
+    }
+  }
+
+  /* FOOTER background is black */
+.anise-footer{
+  background-color: black;   
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 0px;
+}
+.anise-footer a {
+  text-decoration: none;
+  color: deeppink;
+}
+.anise-footer a:hover {
+  color: orange;
+}
