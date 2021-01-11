@@ -1,0 +1,53 @@
+/* Art specific styling */
+
+
+/* Styling for the hero banner */
+.welcome {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox container */
+  display: flex;
+  
+  /* Background styles*/
+  background-image: url(../art-images/art-hero-text1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.one-half.column img {
+    margin: auto;
+    width: 80%;
+}
+/* Responsive layout - makes a 1 column layout instead of a multi column layout */
+@media (max-width: 800px) {
+    .row {
+      flex-direction: column;
+    }
+}
+
+/* FOOTER background is black */
+.footer{
+    background-color: black;   
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+  .footer a {
+    text-decoration: none;
+    color: orange;
+  }
+  .footer a:hover {
+    color: deeppink;
+  }
